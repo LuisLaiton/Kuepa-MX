@@ -1,0 +1,43 @@
+#titulo {
+    color:aqua;
+    background-color: black;
+    text-align: center;
+    display: inline-block;
+}
+
+.parrafo {
+    color: brown;
+    font-family:'Franklin Gothic Medium', 'Courier New', sans-serif;
+    font-size: 1rem;
+    font-weight:bold;
+    font-style: oblique;
+    width: 700px;
+    border: 5px solid blue;
+}
+
+.subrayado {
+    color: aqua;
+    text-decoration: underline;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    border: 5px solid brown;
+}
+
+#lista2 {
+    list-style-type: none;
+    list-style-image: url('../imagenes/corazon-2.png');
+}
+#lista2:hover {
+    list-style-type: none;
+    list-style-image: url('../imagenes/marcador.png');
+}
+
+#lista li {
+    color: red;
+    font-size: 50px;
+    font-weight: bold;
+}
