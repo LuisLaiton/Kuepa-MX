@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #333;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+    color: #007bff;
+}
+
+p {
+    color: #c6c5c5;
+}
+
+img {
+    max-height: 250px;
+    max-width: 100%;
+    border: 5px solid #007bff;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    color: #c6c5c5
+}
+
+ul {
+    list-style: none;
+    list-style-image: url('../imagenes/corazon.png');
+    color: #83b779;
+}
+
+ol {
+    /* list-style: upper-alpha; */
+    color: #b5a350;
+}
+
+.nombre {
+    color: red;
+    /* font-weight: bold; */
+}
+
+#enlace {
+    background-color: yellow;
+    color: #333;
+    text-decoration: underline;
+    padding: 5px;
+    /* border-radius: 4px; */
+}
+
+#enlace:hover {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
