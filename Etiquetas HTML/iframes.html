@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- contenido de otra pagina -->
+    <iframe src="texto.html"></iframe>
+
+    <!-- Atributos -->
+    <iframe src="" width="400" height="500"></iframe>
+    <iframe src="" scrolling="auto"></iframe>   <!-- Permite scroll (auto, yes, no) -->
+    <iframe src="" allowfullscreen></iframe>    <!-- Permite la pantalla completa -->
+    <iframe src="" loading="lazy"></iframe>     <!-- Carga el documento unicamente al ingresar al area visible -->
+    <iframe src="" loading="eager"></iframe>    <!-- Carga el documento al instante (por defecto) -->
+    <iframe src="" frameborder="1"></iframe>    <!-- Borde para el elemento (obsoleto) -->
+
+    <!-- Permisos -->
+    <iframe src="" sandbox="allow-forms allow-modals"></iframe> 
+    <!--                    allow-forms -> envio de formularios
+                            allow-modals -> Dialogos emergentes
+                            allow-orientation-lock -> Cambios en la orientacion de pantalla
+                            allow-popups -> Nuevas ventanas
+                            allow-scripts -> Permite la ejecucion de programas
+    -->
+
+    <!-- Politicas de origen -->
+    <iframe src="" allow="microphone 'none';acelerometer"></iframe>
+    <!--                    accelerometer -> sensores del acelerometro
+                            ambient-light-sensor -> sensores de luz ambiental
+                            autoplay -> reproduccion automatica de contenido
+                            camera -> entrada de video
+                            fullscreen -> pantalla completa
+                            geolocation -> geolocalizacion
+                            gyroscope -> sensor del giroscopio
+                            magnetometer -> sensores del magnetometro
+                            microphone -> entrada de audio
+                            picture-in-picture -> videos encima de otras ventanas
+                            speaker -> salidas de audio
+                            usb -> acceso a dispositivos USB
+
+                                Valores de la lista
+                            * -> todos los origenes estan permitidos
+                            'none' -> ningun origen tiene acceso a la caracteristica
+    -->
+</body>
+
+</html>

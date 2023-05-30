@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Videos -->
+    <video src="videos/video-ejemplo.mp4" controls></video>
+
+    <!-- Atributos -->
+    <video src="" playsinline></video> <!-- Se reproduce en el mismo lugar -->
+    <video src="" controls></video>    <!-- Muestra los controles de reproduccion -->
+    <video src="" autoplay></video>    <!-- Se reproduce automaticamente (depende del navegador) -->
+    <video src="" loop></video>        <!-- Reinica el video -->
+    <video src="" muted></video>       <!-- video silenciado -->
+
+    <!-- Precarga -->
+    <video src="" poster="imagenes/imagen.jpeg"></video> <!-- Portada del video -->
+    <video src="" preload="auto"></video>                <!-- El navegador decide cuando descargarlo -->
+    <video src="" preload="none"></video>                <!-- Solo descaraga el video cuando se pulse play -->
+    <video src="" preload="metadata"></video>            <!-- Descarga los metadatos pero no el video -->
+
+    <!-- Videos alternativos -->
+    <video controls>
+        <source src="videos/video-ejemplo.mp4">
+        <source src="videos/video-ejemplo.webm">
+        <img src="imagenes/imagen.jpeg" alt="Video no funciona">
+    </video>
+
+    <!-- secciones del video -->
+    <video src="videos/video-ejemplo.mp4#t=15" controls></video>        <!-- El video inicia en el segundo 15 -->
+    <video src="videos/video-ejemplo.mp4#t=60,120" controls></video>    <!-- El video inicia al minuto y termina a los dos minutos -->
+
+    <!-- Youtube -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4Lb1G0QHxyE" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+</body>
+
+</html>

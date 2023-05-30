@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Audio -->
+    <audio src="audios/audio-fondo.mp3" controls>
+        Texto alternativo
+    </audio>
+
+    <!-- Atributos -->
+    <audio src="" controls></audio>     <!-- Muestra los controles de reproduccion -->
+    <audio src="" autoplay></audio>     <!-- Se reproduce automaticamente (depende del navegador) -->
+    <audio src="" loop></audio>         <!-- Reinica el audio -->
+    <audio src="" muted></audio>        <!-- Audio silenciado -->
+
+    <!-- Precarga -->
+    <audio src="" preload="auto"></audio>       <!-- El navegador decide cuando descargarlo -->
+    <audio src="" preload="none"></audio>       <!-- Solo descaraga el audio cuando se pulse play -->
+    <audio src="" preload="metadata"></audio>   <!-- Descarga los metadatos pero no el audio -->
+
+    <!-- Audios alternativos -->
+    <audio controls>
+        <source src="audios/audio-fondo.ogg">
+        <source src="audios/audio-fondo.mp3">
+        <source src="audios/audio-fondo.aac">
+    </audio>
+</body>
+
+</html>
