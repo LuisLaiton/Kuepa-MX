@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        td {
+            border: 1px solid blue;
+        }
+
+        th {
+            border: 1px solid red;
+        }
+        .grupo {
+            background-color:bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Tabla -->
+    <table>
+        <!-- Titulo de la tabla -->
+        <caption>Lorem ipsum dolor.</caption>
+        <tr>                    <!-- Fila -->
+            <th>Item 1</th>     <!-- Columnas -->
+            <th>Item 2</th>
+            <th>Item 3</th>
+        </tr>
+        <tr>                    <!-- Fila -->
+            <th>Item 4</th>     <!-- Columnas -->
+            <td>Item 5</td>
+            <td>Item 6</td>
+        </tr>
+        <tr>                    <!-- Fila -->
+            <th>Item 7</th>     <!-- Columnas -->
+            <td>Item 8</td>
+            <td>Item 9</td>
+        </tr>
+    </table>
+
+    <!-- Tabla segmentada -->
+    <table>
+        <thead>                 <!-- Encabezado -->
+            <tr>
+                <th>Item 1</th>
+                <th>Item 2</th>
+                <th>Item 3</th>
+            </tr>
+        </thead>
+        <tbody>                 <!-- Cuerpo -->
+            <tr>
+                <td>Item 4</td>
+                <td>Item 5</td>
+                <td>Item 6</td>
+            </tr>
+            <tr>
+                <td>Item 7</td>
+                <td>Item 8</td>
+                <td>Item 9</td>
+            </tr>
+        </tbody>
+        <tfoot>                 <!-- Totales / Resumen -->
+            <tr>
+                <td>Item 10</td>
+                <td>Item 11</td>
+                <td>Item 12</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Uniendo celdas -->
+    <table>
+        <tr>
+            <td colspan="2">Item 1</td>
+            <td>Item 2</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Item 3</td>
+            <td>Item 4</td>
+            <td>Item 5</td>
+        </tr>
+        <tr>
+            <td>Item 6</td>
+            <td>Item 7</td>
+        </tr>
+    </table>
+
+    <!-- Estilos a grupos de columnas -->
+    <table>
+        <colgroup>  <!-- Establece grupos de columnas -->
+            <col class="grupo">   <!-- Sigue el orden de izquierda a derecha -->
+            <col style="background-color: grey;">               <!-- Estilo a una columna -->
+            <col style="background-color: cadetblue;" span="2"> <!-- Estilo a dos columnas -->
+        </colgroup>
+
+        <tr>
+            <th>Item 1</th>
+            <th>Item 2</th>
+            <th>Item 3</th>
+            <th>Item 4</th>
+        </tr>
+        <tr>
+            <td>Item 5</td>
+            <td>Item 6</td>
+            <td>Item 7</td>
+            <td>Item 8</td>
+        </tr>
+        <tr>
+            <td>Item 8</td>
+            <td>Item 10</td>
+            <td>Item 11</td>
+            <td>Item 12</td>
+        </tr>
+    </table>
+</body>
+
+</html>
