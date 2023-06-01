@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Formulario -->
+    <form action="ejemplo.js" method="get">
+        <fieldset> <!-- Contenedor del formulario -->
+            <legend>Titulo</legend> <!-- Titulo -->
+
+            <!-- Campo de texto -->
+            <p> 
+                Nombre
+                <input type="text">
+            </p>
+
+            <!-- Valor por defecto -->
+            <p> 
+                Apellido
+                <input type="text" value="Ejemplo">
+            </p>
+
+            <!-- Titulo -->
+            <p> 
+                texto corto
+                <input type="text" title="Esto es un ejemplo">
+            </p>
+
+            <!-- Valor Requerido -->
+            <p> 
+                Sexo
+                <input type="radio" name="sexo" value="M" required> Masculino
+                <input type="radio" name="sexo" value="F"> Femenino
+            </p>
+
+            <!-- Texto de ejemplo -->
+            <p> 
+                Correo
+                <input type="email" placeholder="estudiante@ejemplo.com">
+            </p>
+
+            <!-- Tamaño del campo -->
+            <p>
+                usuario
+                <input type="text" size="40">
+            </p>
+
+            <!-- Maximo y minimo de caracteres -->
+            <p>
+                Contraseña
+                <input type="password" maxlength="10" minlength="4">
+            </p>
+
+            <!-- Campo de numero -->
+            <p>
+                Edad
+                <input type="number">
+                <!-- Valor maximo y minimo -->
+                <input type="number" max="100" min="16">
+            </p>
+
+            <!-- Numeros decimales -->
+            <p>
+                Nota
+                <input type="number" step="any">
+                <!-- Cantidad con la que aumenta o disminuye -->
+                <input type="number" step="0.5">
+            </p>
+
+            <!-- Campo de telefono -->
+            <p>
+                telefono
+                <input type="tel">
+            </p>
+
+            <!-- Campo de tiempo -->
+            <p>
+                Hora
+                <input type="time">
+                <!-- Fecha -->
+                <input type="date">
+                <!-- Fecha y hora -->
+                <input type="datetime-local">
+            </p>
+
+            <!-- Casillas -->
+            <p>
+                <input type="checkbox"> Casilla 1
+                <!-- Valor que se envia -->
+                <input type="checkbox" value="Hola"> Casilla 2
+                <!-- Marcada por defecto -->
+                <input type="checkbox" checked> Casilla 3
+            </p>
+
+            <!-- Campo de color -->
+            <p>
+                Color favorito
+                <input type="color" value="#ff0000">
+            </p>
+
+            <!-- Campo de archivos -->
+            <p>
+                Archivo
+                <input type="file" accept=".jpg, .pdf">
+            </p>
+
+            <!-- Campo de rango -->
+            <p>
+                Calificacion
+                <input type="range">
+                <!-- Los cambios se daran de a dos puntos dentro del rango -->
+                <input type="range" min="1" max="10" step="2">
+                <!-- Valores por cada punto del rango -->
+                <input type="range" min="1" max="5" list="lista-rango">
+                <datalist>
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                </datalist>
+            </p>
+
+            <!-- Area de texto -->
+            <p>
+                Observaciones
+                <textarea cols="30" rows="5"></textarea>
+                <!-- Texto por defecto -->
+                <textarea cols="30" rows="5">Por defecto</textarea>
+                <!-- Texto de ejemplo -->
+                <textarea cols="30" rows="5" placeholder="Ejemplo"></textarea>
+            </p>
+
+            <!-- Menu desplegable -->
+            <p>
+                Elija una opcion
+                <select>
+                    <option>Uno</option>
+                    <!-- Valor por defecto -->
+                    <option selected>Dos</option>
+                    <option>Tres</option>
+                </select>
+                <!-- Valores -->
+                <select>
+                    <option value="1">Uno</option>
+                    <option value="2">Dos</option>
+                    <option value="3">Tres</option>
+                </select>
+                <!-- Grupos -->
+                <select>
+                    <Option selected>...</Option>
+                    <optgroup label="Grupo 1">
+                        <option>Uno</option>
+                        <option>Dos</option>
+                        <option>Tres</option>
+                    </optgroup>
+                    <optgroup label="Grupo 2">
+                        <option>Cuatro</option>
+                        <option>Cinco</option>
+                        <option>Seis</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <!-- Label -->
+            <label for="Texto1">Texto con label</label>
+            <input type="text" id="Texto1" name="Texto1">
+            <!-- Label anidado -->
+            <label for="check1">
+                Casilla label
+                <input type="checkbox" id="check1">
+            </label>
+            <label for="radio1">
+                Radio label
+                <input type="radio" id="radio1">
+            </label>
+
+            <!-- Boton de envio -->
+            <input type="submit" value="Enviar">
+            <button>
+                <img src="imagenes/github.svg.png" alt="Boton enviar">
+                Enviar
+            </button>
+            <!-- Boton de reinicio -->
+            <input type="reset" value="Borrar" disabled>
+            <button type="reset">
+                <img src="imagenes/github.svg.png" alt="Boton de borrar">
+                Borrar
+            </button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
