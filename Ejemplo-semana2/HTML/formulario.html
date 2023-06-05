@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo estudiante</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../CSS/estilos-form.css">
+</head>
+
+<body>
+    <header>
+        <h1>Nuevo estudiante</h1>
+        <nav>
+            <a href="../index.html">Página principal</a>
+        </nav>
+    </header>
+    <main>
+        <form action="../index.html">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="nombre">
+                    Nombre <br>
+                    <input type="text" id="nombre" size="40">
+                </label>
+                <br>
+                <label for="apellido">
+                    Apellido <br>
+                    <input type="text" id="apellido" size="40">
+                </label>
+                <br>
+                <label for="fecha-nacimiento">
+                    Fecha de nacimiento <br>
+                    <input type="date" id="fecha-nacimiento">
+                </label>
+                <br>
+                <label for="telefono">
+                    Número de celular <br>
+                    <input type="tel">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Curso</legend>
+                <label for="email">
+                    Correo electronico <br>
+                    <input type="email" size="40">
+                </label>
+                <br>
+                <label for="hora-inicio">
+                    Hora de inicio <br>
+                    <input type="time">
+                </label>
+                <br>
+                <label for="grupo">
+                    Grupo <br>
+                    <select id="grupo">
+                        <option value="0" disabled selected>Grupos</option>
+                        <option value="1">Grupo 1</option>
+                        <option value="2">Grupo 2</option>
+                        <option value="3">Grupo 3</option>
+                        <option value="4">Grupo 4</option>
+                        <option value="5">Grupo 5</option>
+                    </select>
+                </label>
+                <br>
+                <label for="foto">
+                    Foto <br>
+                    <input type="file" type=".png, .jpg, .jpeg">
+                </label>
+                <br>
+                <div>
+                    <label for="temas">
+                        El mejor desempeño es:
+                    </label>
+                    <br>
+                    <label for="HTML">
+                        <input type="radio" id="HTML" name="tema"> HTML
+                    </label>
+                    <label for="CSS">
+                        <input type="radio" id="CSS" name="tema"> CSS
+                    </label>
+                    <label for="JS">
+                        <input type="radio" id="JS" name="tema"> JavaScript
+                    </label>
+                </div>
+                <br>
+                <label for="observaciones">
+                    Observaciones <br>
+                    <textarea id="observaciones" cols="40" rows="8"></textarea>
+                </label>
+            </fieldset>
+            <label for="tyc">
+                <input type="checkbox" id="tyc">
+                Acepto los terminos y condiciones
+            </label>
+            <br><br><br>
+            <input type="submit" value="Enviar" class="boton">
+            <button type="reset" class="boton">Borrar</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy 2023</p>
+    </footer>
+</body>
+
+</html>

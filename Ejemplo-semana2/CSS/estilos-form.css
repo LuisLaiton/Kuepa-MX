@@ -1,0 +1,34 @@
+main {
+    background-color: #c6c5c5;
+}
+
+form {
+    margin: 10px 350px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+
+fieldset {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: larger;
+    text-align: left;
+}
+
+label {
+    font-size: large;
+    display: inline-block;
+    margin: 8px;
+}
+
+input {
+    padding: 5px;
+    border-radius: 5px;
+}
