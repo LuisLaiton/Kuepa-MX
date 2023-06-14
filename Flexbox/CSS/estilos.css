@@ -1,0 +1,70 @@
+/* Tarjetas */
+#productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+figure {
+    background-color: aqua;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+/* Ejemplos flexbox */
+nav>* {
+    border: 1px solid red;
+}
+
+nav {
+    border: 1px solid green;
+    height: 50px;
+}
+
+.fex-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#uno {
+    justify-content: space-around;
+}
+
+/* Orden */
+#enlace1 {
+    order: 3;
+}
+
+#enlace2 {
+    order: 1;
+}
+
+#enlace3 {
+    order: 2;
+}
+
+#dos {
+    justify-content: space-between;
+}
+
+#tres {
+    justify-content: space-evenly;
+}
+
+#cuatro {
+    justify-content: center;
+    align-items: center;
+}
+
+#cinco {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#seis {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
