@@ -1,0 +1,49 @@
+.contenido{
+    display: flex;
+    /* scroll horizontal */
+    /* overflow-x: scroll; */
+}
+
+.elemento{
+    flex: 0 0 100%;
+    text-align: center;
+}
+
+img {
+    height: 500px;
+}
+
+.texto {
+    position: relative;
+    bottom: 50%;
+    background-color: rgba(255, 255, 255, 0.65);
+    padding: 1px;
+}
+.carousel-btn {
+    background-color: rgba(128, 128, 128, 0.6);
+    position: absolute;
+    top: 25%;
+    width: 60px;
+    height: 40px;
+    border-radius: 30%;
+    font-size: 30px;
+}
+
+.carousel-btn:hover {
+    background-color: brown;
+    color:white;
+    box-shadow: -5px 5px 5px gray;
+}
+
+.carousel-btn:disabled {
+    background-color: gray;
+    color:black;
+    box-shadow: none;
+}
+
+.carousel-prev {
+    left: 2%;
+}
+.carousel-next {
+    right: 2%;
+}
